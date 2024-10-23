@@ -32,6 +32,7 @@ class Graph:
 		for i in range(self.amount_vertices - 1):
 			total_cost += self.edges[(path[i], path[i+1])]
 		# add cost of the last edge
+		
 		total_cost += self.edges[(path[self.amount_vertices - 1], path[0])]
 		return total_cost
 
