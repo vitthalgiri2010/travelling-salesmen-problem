@@ -35,7 +35,6 @@ class Graph:
 		total_cost += self.edges[(path[self.amount_vertices - 1], path[0])]
 		return total_cost
 
-
 	# gets random unique paths - returns a list of lists of paths
 	def getRandomPaths(self, max_size):
 		random_paths, list_vertices = [], list(self.vertices)
